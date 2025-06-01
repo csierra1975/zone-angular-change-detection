@@ -1,0 +1,10 @@
+<div class="p-4">
+  <h2>Contador : {{ contador()}}</h2>
+  <h1 class="text-3xl font-bold text-blue-600">Pedidos App</h1>
+  <button class="btn-primary mb-4" (click)="addPedido()">Añadir Pedido</button>
+
+  <div *ngFor="let pedido of pedidos; let i = index" class="mb-4 border p-4 rounded shadow">
+    <h2> Pedido número {{ pedido.id}}</h2>
+    <app-pedido [pedido]="pedido"></app-pedido>
+  </div>
+</div>

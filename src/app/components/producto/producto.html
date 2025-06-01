@@ -1,0 +1,12 @@
+
+<h3>Producton {{ producto.nombre  }}</h3>
+<button (click)="incrementar()">Incrementar contador</button>
+
+<button class="btn-tertiary mr-2" (click)="addDetalle()">Añadir Detalle</button>
+<button class="btn-tertiary" (click)="cambiarNombre()">Cambiar Nombre</button>
+
+<ul class="list-disc ml-6 mt-2">
+  <li *ngFor="let detalle of producto.detalles">
+    <app-detalle-producto [detalle]="detalle"></app-detalle-producto>
+  </li>
+</ul>

@@ -1,0 +1,6 @@
+  <button class="btn-secondary mb-2" (click)="addProducto()">Añadir Producto</button>
+
+<div *ngFor="let producto of pedido.productos; let i = index" class="mb-2 border p-2 rounded">
+  <app-producto [producto]="producto"></app-producto>
+  <br>
+</div>

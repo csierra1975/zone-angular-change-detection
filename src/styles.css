@@ -1,0 +1,7 @@
+/* You can add global styles to this file, and also import other style files */
+/* Tailwind directives require Tailwind CSS and PostCSS setup.
+   If you have not set up Tailwind, follow the official guide: https://tailwindcss.com/docs/guides/angular */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
